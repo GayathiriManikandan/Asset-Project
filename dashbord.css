@@ -1,0 +1,142 @@
+/* dashbord.css */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container .heading{
+    padding: -20px;
+}
+:root {
+  --blue: #4070f4;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --black1: #222;
+  --black: #999;
+}
+
+body {
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  left: -20px;
+}
+
+.cardBox .card {
+  position: relative;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cardBox .card .numbers {
+  position: relative;
+  font-weight: 450;
+  font-size: 2.3em;
+  color: var(--blue);
+}
+
+.cardBox .card .cardName {
+  color: var(--black1);
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+  font-size: 3.2em;
+  color: var(--black);
+}
+
+.cardBox .card:hover {
+  background: var(--blue);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
+  color: var(--white);
+}
+
+.graphBox {
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  min-height: 50px;
+  margin-left: -20px;
+}
+
+.graphBox .box {
+  position: relative;
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Add some space between card and chart rows */
+  }
+  
+  .cardBox {
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four cards in one row */
+    grid-gap: 30px; /* Adjust the space between cards */
+  }
+  
+  .graphBox {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 2fr 2fr; /* Two charts side by side */
+    grid-gap: 30px; /* Adjust the space between the charts */
+    /* min-height: 500px; */
+    margin-left: -20px;
+  }
+  .box {
+    position: relative;
+    background: #fff;
+    padding: 10px;
+    width: 60%;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+  }
+  .iconBx {
+    font-size: 3.2em;
+    color: var(--black); /* Default color */
+  }
+  
+  .card:hover .iconBx {
+    color: var(--white); /* Change color on hover */
+  }
+  
